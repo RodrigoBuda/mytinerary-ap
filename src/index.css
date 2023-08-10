@@ -67,10 +67,19 @@ span.carousel-control-prev-icon {
   border-radius: 5px;
   background-color: #4f46e5;
 }
-
+.signup-signap {
+  display: flex;
+  text-align: center;
+}
 .icon-login {
   font-size: 25px;
-  margin-right: 10px;
+  color: black;
+  margin-left: 0;
+}
+.icon-signap {
+  font-size: 25px;
+  color: black;
+  margin-left: 0;
 }
 /*--- componente textcarrusel ---*/
 .tit-carrusel {

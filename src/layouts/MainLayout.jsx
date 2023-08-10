@@ -1,15 +1,15 @@
 import Footer from "../components/Footer";
 import NavLayout from "./NavLayout";
+import { Outlet } from "react-router-dom";
 
-export default function MainLayout({ children }) {
-  console.log(children);
+export default function MainLayout() {
   return (
     <>
       <div className="cont-navlayout">
         <NavLayout />
-        {children}
-        {/*ACA SE DEBE INSERTAR EL CONTENIDO DINNAMICO DE CADA VISTA*/}
 
+        {/*ACA SE DEBE INSERTAR EL CONTENIDO DINNAMICO DE CADA VISTA*/}
+        <Outlet />
         <Footer />
       </div>
     </>
