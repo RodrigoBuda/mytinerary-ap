@@ -6,7 +6,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { FiLogIn } from "react-icons/fi";
 export default function NavBar() {
   return (
-    <>
+    <div className="cont-header">
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <div className="cont-navbar">
@@ -19,7 +19,11 @@ export default function NavBar() {
                 <Nav className="me-auto">
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="/cities">Cities</Nav.Link>
-                  <NavDropdown title="Login" id="basic-nav-dropdown">
+                  <NavDropdown
+                    className="login-button-nav"
+                    title="Login"
+                    id="basic-nav-dropdown"
+                  >
                     <NavDropdown.Item href="/signup" className="signup-signap">
                       <BsFillPersonFill className="icon-login" /> SignUp
                     </NavDropdown.Item>
@@ -33,6 +37,6 @@ export default function NavBar() {
           </div>
         </Container>
       </Navbar>
-    </>
+    </div>
   );
 }

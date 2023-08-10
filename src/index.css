@@ -8,8 +8,6 @@
   padding: 0;
 }
 
-.cont-navlayout {
-}
 /*--- componente carousel ---*/
 
 .cuatro-img {
@@ -41,6 +39,9 @@ span.carousel-control-prev-icon {
 }
 
 /*--- componente navbar ---*/
+.navbar-toggler {
+  max-height: 40px;
+}
 .cont-tit-nav {
   font-weight: bold;
 }
@@ -59,14 +60,7 @@ span.carousel-control-prev-icon {
   width: 100%;
   justify-content: space-between;
 }
-.login-button-nav {
-  margin-left: 20px;
 
-  display: flex;
-  flex-direction: row;
-  border-radius: 5px;
-  background-color: #4f46e5;
-}
 .signup-signap {
   display: flex;
   text-align: center;
@@ -81,6 +75,18 @@ span.carousel-control-prev-icon {
   color: black;
   margin-left: 0;
 }
+@media only screen and (max-width: 990px) {
+  .cont-menu-nav {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .login-button-nav {
+    background-color: #4f46e5;
+    border-radius: 5px;
+  }
+}
+
 /*--- componente textcarrusel ---*/
 .tit-carrusel {
   font-size: 30px;
@@ -147,8 +153,6 @@ span.carousel-control-prev-icon {
   width: 200px;
   justify-content: space-evenly;
 }
-.cont-iconos-footer.a {
-}
 
 @media only screen and (min-width: 1200px) {
   .cont-main-home {
@@ -184,7 +188,23 @@ span.carousel-control-prev-icon {
     margin-top: 30px;
     padding: 10px 80px;
   }
-}
 
-@media only screen and (max-width: 765px) {
+  .cont-footer {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .button-viewmore {
+    margin: 30px auto 30px;
+    padding: 5px 40px;
+  }
+  .cont-textcarrusel-home {
+    width: 90%;
+  }
+  .cont-carrusel-home {
+    width: 90%;
+  }
+  .cont-textcarrusel-home {
+    text-align: center;
+  }
 }
