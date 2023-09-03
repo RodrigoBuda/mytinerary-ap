@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*--- componente carousel ---*/
+
+.cuatro-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*--- componente card ---*/
+.cont-img-card {
+  width: 50%;
+  padding: 5px;
+}
+.img-carousel-card {
+  border-radius: 5px;
+}
+.p-carrusel-city {
+  text-align: center;
+}
+
+/*--- bootstrap ---*/
+.carousel-indicators {
+  display: none;
+}
+span.carousel-control-next-icon {
+  display: none;
+}
+span.carousel-control-prev-icon {
+  display: none;
+}
+
+/*--- componente navbar ---*/
+.navbar-toggler {
+  max-height: 40px;
+}
+.cont-tit-nav {
+  font-weight: bold;
+}
+.cont-menu-nav {
+  display: flex;
+
+  font-weight: bold;
+  color: black;
+}
+.cont-menu a {
+  font-weight: bold;
+  color: black;
+}
+.cont-navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.signup-signap {
+  display: flex;
+  text-align: center;
+}
+.icon-login {
+  font-size: 25px;
+  color: black;
+  margin-left: 0;
+}
+.icon-signap {
+  font-size: 25px;
+  color: black;
+  margin-left: 0;
+}
+@media only screen and (max-width: 990px) {
+  .cont-menu-nav {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .login-button-nav {
+    background-color: #4f46e5;
+    border-radius: 5px;
+  }
+}
+
+/*--- componente textcarrusel ---*/
+.tit-carrusel {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.text-carrusel {
+  margin-left: 0;
+}
+.button-viewmore {
+  background-color: #4f46e5;
+  margin-top: 30px;
+  padding: 10px 80px;
+}
+
+/*--- home ---*/
+
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cont-main-home {
+  display: flex;
+  max-width: 960px;
+
+  margin: 100px 0;
+  justify-content: space-between;
+}
+.cont-textcarrusel-home {
+  text-align: left;
+  width: 40%;
+}
+.cont-carrusel-home {
+  width: 50%;
+}
+/*----footer-componente-----*/
+.footer-component {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa;
+  height: 50px;
+  margin-top: 20px;
+}
+.cont-footer {
+  display: flex;
+  font-size: 25px;
+  width: 100%;
+  max-width: 960px;
+  justify-content: space-between;
+}
+
+.h3-footer {
+  display: flex;
+
+  text-align: center;
+  padding: 5px 5px 5px 0;
+}
+.cont-iconos-footer {
+  display: flex;
+  padding: 5px;
+  text-align: center;
+  width: 200px;
+  justify-content: space-evenly;
+}
+/*--------FORM_PAGE-------------*/
+.form-signup{
+
+  display: flex;
+  width: 100%;
+  justify-content: center; 
+  height:470px;
+}
+.cont-form-signup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  width: 300px; 
+}
+
+.input-form-signup{
+  border: solid #9fa6b2 1px;
+  margin:14px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 2px ;
+}
+.button-form-signup{
+  border: solid #9fa6b2 1px;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 2px;
+  transition: background-color 0.3s;
+}
+.button-form-signup:hover {  
+ 
+  background-color: #4f46e5; 
+}
+.state-signin-ap{
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .cont-main-home {
+    max-width: 1120px;
+  }
+  .cont-footer {
+    max-width: 1120px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .cont-main-home {
+    max-width: 700px;
+  }
+  .cont-footer {
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cont-main-home {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tit-carrusel {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .text-carrusel {
+    margin-left: 0;
+  }
+  .button-viewmore {
+    background-color: #4f46e5;
+    margin-top: 30px;
+    padding: 10px 80px;
+  }
+
+  .cont-footer {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .button-viewmore {
+    margin: 30px auto 30px;
+    padding: 5px 40px;
+  }
+  .cont-textcarrusel-home {
+    width: 90%;
+  }
+  .cont-carrusel-home {
+    width: 90%;
+  }
+  .cont-textcarrusel-home {
+    text-align: center;
+  }
+}
