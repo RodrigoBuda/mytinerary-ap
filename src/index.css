@@ -153,6 +153,7 @@ span.carousel-control-prev-icon {
   width: 200px;
   justify-content: space-evenly;
 }
+
 /*--------FORM_PAGE-------------*/
 .form-signup{
 
@@ -193,6 +194,7 @@ span.carousel-control-prev-icon {
   border-radius: 4px;
 
 }
+
 
 
 @media only screen and (min-width: 1200px) {

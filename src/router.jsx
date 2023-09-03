@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import MainLayout from "./layouts/MainLayout";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
-import Cities from "./pages/Cities";  
+import Cities from "./pages/Cities";
 import Citydetail from "./pages/Citydetail"; 
 import FormSignUp from "./pages/FormSignUp"
 import FormSignIn from "./pages/FormSignIn"
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         path: "/*",
         element: <NotFound />,
       },
-    ],
-  },
-]);
-export default router;
+    ]
+}
+]
+)

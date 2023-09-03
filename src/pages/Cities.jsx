@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from "react";
 import axios from 'axios'
 import apiUrl from "../apiUrl";
@@ -33,6 +34,4 @@ export default function Cities() {
     </>
     
     )
-  
-
-}
+    }

@@ -1,11 +1,14 @@
+
 import { useState, useEffect } from "react";
 import TextCarrusel from "../components/TextCarrusel";
 import Carrusel from "../components/Carrusel";
 import axios from "axios"
 import apiUrl from "../apiUrl.js"
+
 export default function Home() {
   const nombre1 = "My";
   const nombre2 = " Tinerary";
+
 
   
   const [show, setShow] = useState(true)
@@ -18,6 +21,8 @@ export default function Home() {
     },
     []
     )
+
+
   return (
     <main className="home">
       <div className="cont-main-home ">

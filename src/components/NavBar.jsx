@@ -24,7 +24,10 @@ export default function NavBar() {
                     title="Login"
                     id="basic-nav-dropdown"
                   >
+
                     <NavDropdown.Item href="/auth/signup" className="signup-signap">
+
+
                       <BsFillPersonFill className="icon-login" /> SignUp
                     </NavDropdown.Item>
                     <NavDropdown.Item className="signup-signap" href="/signap">
