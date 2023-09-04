@@ -251,3 +251,36 @@ span.carousel-control-prev-icon {
     text-align: center;
   }
 }
+/*--------CardCityOne-----*/
+.cont-cardCityOne{
+  width: 100%;
+  
+}
+.cont-cardCityOne{
+  width: 100%;
+  
+}
+.h3-city-cardCityOne{
+  color: black;
+  margin: 20px;
+}
+.button-cardCityOne{
+  background-color: #4f46e5;
+    border-radius: 4px;
+    padding: 5px 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+/*----------cities-------*/
+.cont-cities{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards-cities{
+  margin: 5px;
+  
+}
+.button-cardCity{
+  color: black;
+}

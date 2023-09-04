@@ -11,7 +11,7 @@ export default function NavBar() {
         <Container>
           <div className="cont-navbar">
             <div className="cont-tit-nav">
-              <Navbar.Brand href="#home">MyTinerary</Navbar.Brand>
+              <Navbar.Brand href="/">MyTinerary</Navbar.Brand>
             </div>
             <div className="cont-menu-nav">
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -30,8 +30,8 @@ export default function NavBar() {
 
                       <BsFillPersonFill className="icon-login" /> SignUp
                     </NavDropdown.Item>
-                    <NavDropdown.Item className="signup-signap" href="/signap">
-                      <FiLogIn className="icon-signap" /> SignAp
+                    <NavDropdown.Item className="signup-signap" href="/auth/signIn">
+                      <FiLogIn className="icon-signap" /> SignIn
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>

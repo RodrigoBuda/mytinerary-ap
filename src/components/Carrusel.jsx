@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import Card from "../components/Card";
+import Card from "./Card";
 
 export default function Carrusel({ data }) {
   let counter = 0;
