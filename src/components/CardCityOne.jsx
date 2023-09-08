@@ -27,7 +27,7 @@ function CardCityOne({ src, alt, text, id, smalldescription }) {
           {show ? "⬆️" : "⬇️"}
         </Anchor>
         {show &&
-          itineraries.map((each, index) => <p key={index}>{each.name} 💵: {each.price} </p>)}
+          itineraries.map((each, index) => <p className="p-itineraries" key={index}>{each.name} 💵: {each.price} </p>)}
       </div>
     </>
   );
