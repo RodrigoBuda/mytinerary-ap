@@ -308,13 +308,13 @@ span.carousel-control-prev-icon {
   opacity: 0;
 }
 .p-itineraries{
-  z-index: 5;
-  color: #EBEBEB;
-  text-align: center;
+
 }
 @media only screen and (min-width: 1200px) {
- 
-}
+ .p-itineraries{
+  z-index: 5;
+  color: #EBEBEB;
+  text-align: center; }}
 @media only screen and (max-width: 991px) {
   .sombreado-cardCityOne{
     display: none;
