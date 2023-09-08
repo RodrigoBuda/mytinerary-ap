@@ -254,28 +254,104 @@ span.carousel-control-prev-icon {
 /*--------CardCityOne-----*/
 .cont-cardCityOne{
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:470px;
+  justify-content: center;
   
+  
+
 }
-.cont-cardCityOne{
+.sombreado-cardCityOne{
+  position: absolute;
+  z-index: 3;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 4px;
+  
+
+}
+.img-carousel-card{
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  border-radius: 4px;
+  
   
 }
 .h3-city-cardCityOne{
-  color: black;
+  color: #EBEBEB;
   margin: 20px;
+  font-size: 30px;
+  z-index: 5;
+}
+.p-city-cardCityOne{
+  width: 70%;
+  z-index: 5;
+  color: #EBEBEB;
 }
 .button-cardCityOne{
+  font-size: 20px;
+  width: 20%;
   background-color: #4f46e5;
     border-radius: 4px;
     padding: 5px 30px;
     text-align: center;
     margin: 10px;
+    margin-top: 30px;
+    color: #EBEBEB;
+     z-index: 5;
+
+}
+.imgParaSombra{
+  opacity: 0;
+}
+@media only screen and (min-width: 1200px) {
+ 
+}
+@media only screen and (max-width: 991px) {
+  .sombreado-cardCityOne{
+    display: none;
+  }
+  .img-carousel-card{
+    position:static;
+    max-width: 700px;
+  }
+  .h3-city-cardCityOne{
+    color: black;
+    
+  }
+  .p-city-cardCityOne{
+    max-width: 700px;
+    color: black;
+  }
+ 
+  .cont-cardCityOne{
+    height: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .img-carousel-card{
+    max-width: 90%;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .button-cardCityOne{
+    font-size: 15px;
+    width: auto;
+      margin: 40px;
+
+  }
 }
 
 /*----------cities-------*/
 .cont-cities{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .cards-cities{
   margin: 5px;
@@ -283,4 +359,23 @@ span.carousel-control-prev-icon {
 }
 .button-cardCity{
   color: black;
+}
+.buscador-cities{
+  width: 80%;
+  margin: auto;
+  border: solid #9fa6b2 2px;
+  border-radius: 4px;
+}
+.cont-buscador{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 991px) {
+
+  .cards-cities{
+    margin: 10px;
+    
+  }
 }

@@ -7,7 +7,6 @@ const { read_cities } = city_actions;
 
 export default function Cities() {
   const cities = useSelector((store) => store.cities.cities);
-
   const [reEffect, setReEffect] = useState(true);
   const text = useRef();
   const dispatch = useDispatch();
@@ -22,16 +21,20 @@ export default function Cities() {
   }
   return (
     <>
-      <input
-        ref={text}
-        type="text"
-        name="text"
-        id="text"
-        onKeyUp={handleFilter}
-      />
+      <div className="cont-buscador">
+        <input
+          ref={text}
+          className="buscador-cities"
+          type="text"
+          name="text"
+          id="text"
+          onKeyUp={handleFilter}
+          placeholder="🔎"
+        />
+      </div>
       <div className="cont-cities">
         {cities.map((each) => (
-          <CardCity 
+          <CardCity
             key={each._id}
             src={each.photo}
             alt={each._id}

@@ -2,10 +2,9 @@
 import { useState, useEffect } from "react";
 import TextCarrusel from "../components/TextCarrusel";
 import Carrusel from "../components/Carrusel";
-import axios from "axios"
-import apiUrl from "../apiUrl.js"
-import { useSelector } from "react-redux/es/hooks/useSelector";
-import { useDispatch } from "react-redux";
+//import axios from "axios"
+//import apiUrl from "../apiUrl.js"
+import { useSelector, useDispatch } from "react-redux";
 import city_actions from '../store/actions/cities'
 
 const { read_carousel } = city_actions
