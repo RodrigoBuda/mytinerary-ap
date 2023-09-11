@@ -169,6 +169,14 @@ span.carousel-control-prev-icon {
   justify-content: center; 
   width: 300px; 
 }
+.h2-createAccount{
+  font-size: 25px;
+  margin: 30px;
+}
+.h3-SignIn{
+  font-size: 25px;
+  margin: 30px;
+}
 
 .input-form-signup{
   border: solid #9fa6b2 1px;
@@ -182,11 +190,13 @@ span.carousel-control-prev-icon {
   font-size: 20px;
   border-radius: 4px;
   padding: 2px;
+  background-color: #4f46e5; 
+  padding: 2px 8px;
   transition: background-color 0.3s;
 }
 .button-form-signup:hover {  
  
-  background-color: #4f46e5; 
+  background-color: #9fa6b2; 
 }
 .state-signin-ap{
   cursor: pointer;
@@ -272,7 +282,8 @@ span.carousel-control-prev-icon {
   
 
 }
-.img-carousel-card{
+.cont-cardCityOne .img-carousel-card {
+  
   width: 100%;
   position: absolute;
   z-index: 0;
@@ -319,7 +330,8 @@ span.carousel-control-prev-icon {
   .sombreado-cardCityOne{
     display: none;
   }
-  .img-carousel-card{
+  .cont-cardCityOne .img-carousel-card {
+
     position:static;
     max-width: 700px;
   }
@@ -337,7 +349,8 @@ span.carousel-control-prev-icon {
   }
 }
 @media only screen and (max-width: 767px) {
-  .img-carousel-card{
+  .cont-cardCityOne .img-carousel-card {
+
     max-width: 90%;
     margin-top: 20px;
   }

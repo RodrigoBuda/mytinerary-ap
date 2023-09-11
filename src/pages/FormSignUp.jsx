@@ -1,9 +1,11 @@
-import { useRef } from "react";
+import { useRef,useEffect } from "react";
 import axios from "axios";
+import Users from '../components/Users.jsx';
 import apiUrl from "../apiUrl";
 import { Link as Anchor  } from "react-router-dom";
-
-
+import { useDispatch } from "react-redux";
+import user_actions from '../store/actions/users'
+const {read_6_users} = user_actions
 export default function FormSignUp() {
   const name = useRef();
   const lastName = useRef();
@@ -11,6 +13,11 @@ export default function FormSignUp() {
   const photo = useRef();
   const mail = useRef();
   const password = useRef();
+  const dispatch = useDispatch()
+  useEffect(
+    ()=>{dispatch(read_6_users())},
+    []
+  )
 
     async function handleSignUp() {
     try {
@@ -31,11 +38,12 @@ export default function FormSignUp() {
       console.log(error);
     }
     
-    console.log(data)
   }
   return (
-      <form className="form-signup">
+    <form className="form-signup">
+      <Users/>
         <div className="cont-form-signup">
+        <h2 className="h2-createAccount">Create Account </h2>
           <input
             className="input-form-signup"
             ref={name}
@@ -79,7 +87,7 @@ export default function FormSignUp() {
           <input
             className="input-form-signup"
             ref={password}
-            type="text"
+            type="password"
             name="password"
             id="password"
             placeholder="Password"
